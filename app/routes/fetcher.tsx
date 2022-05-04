@@ -10,10 +10,10 @@ export default function TestFetcher() {
     fetcher.load("/healthcheck");
   }, [fetcher]);
 
-  useEffect(() => {
-    console.log("changed health");
-    setHealth(fetcher.data);
-  }, [fetcher.data]);
+  //   useEffect(() => {
+  //     console.log("changed health");
+  //     setHealth(fetcher.data);
+  //   }, [fetcher.data]);
 
   return <div>test: {health}</div>;
 }
